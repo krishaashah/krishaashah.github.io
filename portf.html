@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="../style/index.css">
+</head>
+<body>
+
+    <div class="main">
+        <h1>Portfolio Website
+            <div class="nav">
+                <nav>
+                    <a class="drop" onclick="openPopup()" href="#">Skills</a>
+                    <a class="drop" onclick="openPopup1()" href="#">Education</a>
+                    <a class="drop" onclick="openPopup2()" href="#">Achievements</a>
+                    <a class="drop" onclick="openPopup3()" href="#">Contact</a>
+                </nav>
+            </div>
+        </h1>
+    <div class="popup" id="popup">
+       <h1>Skills</h1>
+        <ul>
+            <h3>C: Advance</h3>
+            <h3>C++: Advance</h3>
+            <h3>Python: Advance</h3>
+            <h3>Html: Intermediate</h3>
+            <h3>CSS: Intermediate</h3>
+            <h3>JavaScript: Beginner</h3>
+        </ul>
+        <a onclick="closePopup()" href="#">Close</a>
+        
+    </div>
+
+    <div class="popup1" id="popup1">
+        <h1>Education</h1>
+         <ul>
+            <h2> D J Sanghvi College Of Engineering</h2>
+            <h3>Pursuing Second Year Engineering in EXTC.</h3>
+            <h2> K J Somaiya College Of Science And Commerce</h2>
+            <h3>2020-2022</h3>
+            <h2> SKKES</h2>
+            <h3>2020</h3>
+        </ul>
+        <a onclick="closePopup1()" href="#">Close</a>
+    </div>
+
+    <div class="popup2" id="popup2">
+        <h1>Achievements/Hobbies</h1>
+         <ul>
+            <h3>Won first place in Cricket tournament held in college.</h3>
+            <h3>Won various competitions in painting and dancing during school time.</h3>
+            <h3>I was selected as the Head Girl for my school batch.</h3>
+            <h3>Some of my Hobbies are: Dancing, Painting, Reading Novels</h3>
+        </ul>
+        <a onclick="closePopup2()" href="#">Close</a>
+    </div>
+        
+    <div class="popup3" id="popup3">
+        <h1>Contact</h1>
+        <ul>
+           <h2>Linkedin: <a href='https://www.linkedin.com/in/krisha-shah05'>Krisha Shah</a></h2>
+           <h2>Contact: 9372655528</h2>
+           <h2>Email: <a href='mailto:krishadshah510@gmail.com'>Krisha</a></h2>
+           <h2>Github: <a href='mailto:krishadshah510@gmail.com'>Krisha</a>
+       </ul>
+        <a onclick="closePopup3()" href="#">Close</a>
+    </div>
+    </div>
+
+    <div class="home">
+    <div class="home1">
+        <h1>Some Words About Me</h1>
+        <ul>
+            <li>
+                <p>I am currently pursuing Second Year Engineering in EXTC from D J Sanghvi College Of Engineering.</p>
+            <li>
+                <p>I am looking forward for my first work experience</p>
+            <li>    
+                <p>Responsible and orderly person.</p>
+            <li>   
+                <p>Extremely hardworking and determined towards my goals.</p>
+            <li>
+                <p>High observation skills</p>
+            <li>
+                <p>Multitasking</p>
+            <li>    
+                <p>Effective Communication</p>
+            <li>
+                <p>Decision making power</p>
+            </li>    
+        </ul>
+    </div>
+    <div class="home2">
+        <video class="img" autoplay muted src="../images/2.mp4"></video>
+    </div>
+    </div>
+<script>
+let popup=  document.getElementById("popup");
+let popup1= document.getElementById("popup1");
+let popup2= document.getElementById("popup2");
+let popup3= document.getElementById("popup3");
+
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function openPopup1(){
+    popup1.classList.add("open-popup1");
+}
+function openPopup2(){
+    popup2.classList.add("open-popup2");
+}
+function openPopup3(){
+    popup3.classList.add("open-popup3");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+function closePopup1(){
+    popup1.classList.remove("open-popup1");
+}
+function closePopup2(){
+    popup2.classList.remove("open-popup2");
+}
+function closePopup3(){
+    popup3.classList.remove("open-popup3");   
+}
+</script>
+</body>
+</html>
