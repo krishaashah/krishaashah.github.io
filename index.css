@@ -29,7 +29,7 @@
 .home{
     display : flex;
     flex-direction : row;
-    background-image: url('/images/4.png');
+    background-image: url('images/4.png');
     background-repeat: no-repeat;
     margin-top: 2%;
     width: auto;
